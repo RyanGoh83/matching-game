@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Pjt 1 - Matching Game</title>
+  </head>
+  <body>
+    <h1>Matching Game</h1>
+    <h2>Score: <span id="game-score">0</span></h2>
+    <div class="canvas">
+      <div class="start-modal" id="start-modal">
+        <h3 id="instructions-header">Matching Game</h3>
+        <br />
+        <p id="instructions-text">
+          Click on each tile to reveal it. When two tiles match, you get a
+          point.
+        </p>
+        <br />
+        <button class="start-btn" id="start-btn">Start Game!</button>
+      </div>
+      <div class="start-screen" id="start"></div>
+      <div class="game-board" id="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

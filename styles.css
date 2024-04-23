@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1,
+h2 {
+  text-align: center;
+  margin-top: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.canvas {
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-screen {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5); /*dim the background*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-modal {
+  position: fixed;
+  width: 40%;
+  height: 30%;
+  z-index: 5;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.start-btn {
+  position: relative;
+  width: 9rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fbeef0;
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: 0.3rem solid black;
+}
+
+.game-board {
+  background-color: #bad4d0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border: 0.3rem;
+  border-style: solid;
+  border-color: #025d4f;
+  border-radius: 0.5rem;
+}
+.game-card {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  background-color: #fbeef0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-card:hover {
+  border: 0.3rem solid black;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.card-before,
+.card-after {
+  position: absolute;
+  border-radius: 0.5rem;
+  border: 0.2rem solid black;
+  font-weight: bold;
+  font-size: xx-large;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: black;
+  color: #fbeef0;
+  border: 0.3rem solid #fbeef0;
+}
+li {
+  list-style-type: none;
+}
+
+.hide {
+  display: none;
+}
